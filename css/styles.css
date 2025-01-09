@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+ 
+nav{
+    font-size: 1.5rem;
+    height: 100px;
+    background-color: rgb(51, 51, 51, 0.2);
+    
+    backdrop-filter: blur(20px);
+
+}
+
+a{
+    color: white;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif; 
+    line-height: 1.5;
+    color: #333;
+    background-image: url(./../img/wallpaper.jpeg);
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    /* background-position: center center;  */
+    background-attachment: fixed; 
+}
