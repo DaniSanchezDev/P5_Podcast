@@ -120,16 +120,20 @@ nav ul li {
     transition: 0.2s ease-in-out;
 }
 
-#more {
+
+/* Hero styles */
+
+#hero {
     display: flex;
     background-color: #fff;
     box-shadow: 0px -5px 10px 0px rgb(0, 0, 0, 0.2);
     padding: 100px;
     color: #0D0D0D;
+    gap: 30px;
 }
 
-#more h2 {
-    text-align: center;
+#hero h2 {
+    text-align: left;
     font-weight: 500;
     font-size: 3em;
     margin-bottom: 50px;
@@ -137,25 +141,110 @@ nav ul li {
 }
 
 
-#more p {
-    text-align: center;
+#hero p {
+    text-align: left;
     font-size: 1.3em;
     color: #0D0D0D;
+    margin-top: 5px;
+    font-style: italic;
 }
-
-
-
-/* Estilos hero layout */
 
 
 .hero-img{
-    /* width: 500px; */
-    height: 400px;
+    height: 500px;
 }
 .hero-div{
-    /* display: flex; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     
 }
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 30px 0;
+}
+
+
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 3px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+}
+
+.btn-12{
+    position: relative;
+    right: 20px;
+    bottom: 20px;
+    border:none;
+    box-shadow: none;
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    perspective: 230px;
+}
+
+.btn-12 span {
+    background: #56828C;
+    background: linear-gradient(0deg, #395359 0%, #A6A6A6 100%);
+    display: block;
+    position: absolute;
+    width: 130px;
+    height: 40px;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    border-radius: 3px;
+    margin:0;
+    text-align: center;
+    box-sizing: border-box;
+    transition: all .3s;
+}
+
+.btn-12 span:nth-child(1) {
+    box-shadow:
+     -7px -7px 20px 0px #fff9,
+     -4px -4px 5px 0px #fff9,
+     7px 7px 20px 0px #0002,
+     4px 4px 5px 0px #0001;
+    transform: rotateX(90deg);
+    transform-origin: 50% 50% -20px;
+}
+
+.btn-12 span:nth-child(2) {
+    transform: rotateX(0deg);
+    transform-origin: 50% 50% -20px;
+}
+
+.btn-12:hover span:nth-child(1) {
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    transform: rotateX(0deg);
+}
+
+.btn-12:hover span:nth-child(2) {
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    color: transparent;
+    transform: rotateX(-90deg);
+}
+  
 
 
 
