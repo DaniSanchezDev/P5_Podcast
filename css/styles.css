@@ -31,6 +31,11 @@ Negro: #0D0D0D
 */
 
 
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -291,7 +296,7 @@ hr {
     grid-template-columns: 3fr 1fr;
 }
 
-.podcast-embed{
+.podcast-embed {
     display: flex;
     align-items: center;
 }
@@ -303,11 +308,11 @@ hr {
     margin-right: 50px;
 }
 
-.episodios{
+.episodios {
     padding: 100px 0;
 }
 
-.episodios h2{
+.episodios h2 {
     text-align: center;
     font-weight: 300;
     font-size: 3em;
@@ -315,8 +320,80 @@ hr {
     color: #395359;
 }
 
-.grid-podcasts{
+.grid-podcasts {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 150px;
+}
+
+
+/* 
+Azul: #56828c 
+Grisaceo: #56828c
+Blanco:   #f2f2f2
+Gris: #A6A6A6
+Negro: #0D0D0D
+*/
+
+footer {
+    background-color: #395359;
+    color: white;
+    font-weight: 300;
+}
+
+.footer-content {
+    padding: 50px 100px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+}
+
+footer p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.footer-links{
+    
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.footer-socials {
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+}
+
+.footer-links a,
+.footer-socials a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover,
+.footer-socials a:hover {
+    color: #56828c;
+}
+
+.footer-socials a {
+    font-size: 16px;
+}
+
+.footer-socials a:hover {
+    transform: scale(1.1);
+    /* Agrandar el enlace social al pasar el mouse */
+}
+
+.copyright{
+    background-color: hsl(191, 5%, 29%);
+}
+
+.copyright p {
+    font-size: 0.9em;
+    text-align: center;
+    padding: 10px 0;
 }
