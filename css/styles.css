@@ -117,7 +117,7 @@ nav ul li {
 #mainlogo h1:hover {
     cursor: pointer;
     text-shadow: 0px 0px 10px rgb(255, 255, 255);
-    transition: 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 
