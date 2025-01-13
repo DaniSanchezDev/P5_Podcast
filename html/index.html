@@ -60,34 +60,24 @@
                             <span class="edge"></span>
 
                             <span class="front">
-                                <a href="javascript:void(0)" id="scroll-button">Escuchar ahora</a>
+                                <a href="javascript:void(0)" id="scroll-podcast">Escuchar ahora</a>
                             </span>
                         </button>
 
-                        <script>
-                            document.getElementById('scroll-button').addEventListener('click', function () {
-                                const targetSection = document.querySelector('#podcast'); // Selecciona la sección con el id 'podcast'
-
-                                if (targetSection) {
-                                    targetSection.scrollIntoView({
-                                        behavior: 'smooth',
-                                        block: 'start'
-                                    });
-                                }
-                            });
-                        </script>
                         <button class="pushable">
                             <span class="shadow"></span>
                             <span class="edge"></span>
-                            <span class="front"> Episodios </span>
+                            <span class="front">
+                                <a href="javascript:void(0)" id="scroll-episodios">Episodios</a>
+                            </span>
                         </button>
+
 
                     </div>
                 </div>
                 <img class="hero-img" src="./../img/Micro.jpg" alt="foto microfono y cascos" />
             </article>
 
-            <hr />
 
             <article id="podcast">
 
@@ -137,7 +127,7 @@
 
             <hr>
 
-            <div class="episodios">
+            <div class="episodios" id="episodios">
                 <h2>Nuestros episodios anteriores</h2>
                 <div class="grid-podcasts">
                     <iframe style="border-radius:12px"
@@ -193,7 +183,6 @@
             <p>Eloy Lozano & Daniel Sánchez · Copyright 2025 &copy</p>
         </div>
     </footer>
-
 
 
     <script src="./../js/index.js"></script>
