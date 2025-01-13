@@ -2,7 +2,7 @@
 
 /* Color Theme Swatches in Hex */
 .Website-for-Product-and-Industrial-Designer-1-hex {
-    color: #56828C;
+    color: #56828c;
 }
 
 .Website-for-Product-and-Industrial-Designer-2-hex {
@@ -22,6 +22,15 @@
 }
 
 
+/* 
+Azul: #56828c 
+Grisaceo: #56828c
+Blanco:   #f2f2f2
+Gris: #A6A6A6
+Negro: #0D0D0D
+*/
+
+
 * {
     margin: 0;
     padding: 0;
@@ -29,17 +38,15 @@
     list-style: none;
     text-decoration: none;
 }
- 
-nav{
+
+nav {
     font-size: 1.5rem;
     height: 100px;
     background-color: rgb(51, 51, 51, 0.2);
-    
     backdrop-filter: blur(20px);
-
 }
 
-a{
+a {
     color: white;
 }
 
@@ -85,9 +92,8 @@ nav ul li {
     font-weight: 300;
 }
 
-.iconLogin{
+.iconLogin {
     color: white;
-    
 }
 
 #home {
@@ -120,13 +126,18 @@ nav ul li {
     transition: all 0.2s ease-in-out;
 }
 
+#info {
+    box-shadow: 0px -5px 10px 0px rgb(0, 0, 0, 0.2);
+    background-color: #f2f2f2ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 /* Hero styles */
 
 #hero {
     display: flex;
-    background-color: #fff;
-    box-shadow: 0px -5px 10px 0px rgb(0, 0, 0, 0.2);
     padding: 100px;
     color: #0D0D0D;
     gap: 30px;
@@ -134,8 +145,8 @@ nav ul li {
 
 #hero h2 {
     text-align: left;
-    font-weight: 500;
-    font-size: 3em;
+    font-weight: 300;
+    font-size: 3.5em;
     margin-bottom: 50px;
     color: #395359;
 }
@@ -150,16 +161,19 @@ nav ul li {
 }
 
 
-.hero-img{
+.hero-img {
     height: 500px;
+    box-shadow: 5px 5px 10px 0px rgb(0, 0, 0, 0.2);
 }
-.hero-div{
+
+.hero-div {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+
 }
-.buttons{
+
+.buttons {
     display: flex;
     justify-content: center;
     gap: 30px;
@@ -180,17 +194,17 @@ nav ul li {
     transition: all 0.3s ease;
     position: relative;
     display: inline-block;
-    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-     7px 7px 20px 0px rgba(0,0,0,.1),
-     4px 4px 5px 0px rgba(0,0,0,.1);
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
     outline: none;
 }
 
-.btn-12{
+.btn-12 {
     position: relative;
     right: 20px;
     bottom: 20px;
-    border:none;
+    border: none;
     box-shadow: none;
     width: 130px;
     height: 40px;
@@ -199,28 +213,36 @@ nav ul li {
 }
 
 .btn-12 span {
-    background: #56828C;
-    background: linear-gradient(0deg, #395359 0%, #A6A6A6 100%);
+    background: #A6A6A6;
+    background: linear-gradient(0deg, #56828c 0%, #A6A6A6 100%);
     display: block;
     position: absolute;
     width: 130px;
     height: 40px;
-    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-     7px 7px 20px 0px rgba(0,0,0,.1),
-     4px 4px 5px 0px rgba(0,0,0,.1);
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
     border-radius: 3px;
-    margin:0;
+    margin: 0;
     text-align: center;
     box-sizing: border-box;
     transition: all .3s;
 }
 
+/* 
+Azul: #56828c 
+Grisaceo: #56828c
+Blanco:   #f2f2f2
+Gris: #A6A6A6
+Negro: #0D0D0D
+*/
+
 .btn-12 span:nth-child(1) {
     box-shadow:
-     -7px -7px 20px 0px #fff9,
-     -4px -4px 5px 0px #fff9,
-     7px 7px 20px 0px #0002,
-     4px 4px 5px 0px #0001;
+        -7px -7px 20px 0px #fff9,
+        -4px -4px 5px 0px #fff9,
+        7px 7px 20px 0px #0002,
+        4px 4px 5px 0px #0001;
     transform: rotateX(90deg);
     transform-origin: 50% 50% -20px;
 }
@@ -231,20 +253,31 @@ nav ul li {
 }
 
 .btn-12:hover span:nth-child(1) {
-    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-     7px 7px 20px 0px rgba(0,0,0,.1),
-     4px 4px 5px 0px rgba(0,0,0,.1);
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
     transform: rotateX(0deg);
 }
 
 .btn-12:hover span:nth-child(2) {
-    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-     7px 7px 20px 0px rgba(0,0,0,.1),
-     4px 4px 5px 0px rgba(0,0,0,.1);
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
     color: transparent;
     transform: rotateX(-90deg);
 }
-  
 
+hr {
+    background-color: rgb(166, 166, 166, 0.4);
+    height: 2px;
+    width: 90%;
+    border-radius: 10px;
+    border: none;
+}
 
+#podcast {
+    padding: 100px;
+    height: 800px;
+    width: 100%;
+}
 
