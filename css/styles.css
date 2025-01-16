@@ -309,6 +309,27 @@ hr {
     margin-right: 50px;
 }
 
+.notes{
+    width: 20%;
+}
+
+.notesHidden {
+    /* height: 0; */
+    overflow: hidden;
+    transition: height 0.3s ease; 
+    visibility: hidden; 
+}
+
+
+.notesHidden.visible {
+    height: auto; 
+    visibility: visible;
+}
+
+
+
+
+
 .episodios {
     padding: 100px 0;
 }

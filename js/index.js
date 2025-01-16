@@ -23,3 +23,12 @@ document.getElementById('scroll-episodios').addEventListener('click', function (
     }
 });
 
+function showHide(){
+    let container = document.querySelector('.notesHidden');
+
+    if(container.classList.contains('visible')){
+        container.classList.remove('visible');
+    } else {
+        container.classList.add('visible');
+    }
+}
