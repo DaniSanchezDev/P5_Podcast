@@ -60,7 +60,7 @@
                             <span class="edge"></span>
 
                             <span class="front">
-                                <a href="#podcast" >Escuchar ahora</a>
+                                <a href="#podcast">Escuchar ahora</a>
                             </span>
                         </button>
 
@@ -123,43 +123,39 @@
                         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                         loading="lazy"></iframe>
                 </div>
-                <div>
-                    <button class="pushable notes" onclick="showHide()">
+
+                <div id="notesContainer">
+                    <button class="pushable notes" id="toggleButton">
                         <span class="shadow"></span>
                         <span class="edge"></span>
                         <span class="front">
-                            <a href="javascript:void(0)" id="scroll-episodios">Ver notas</a>
+                            <a href="javascript:void(0)">Ver notas</a>
                         </span>
                     </button>
+                    <div id="notes" class="notesHidden">
+                        <p>
+                            En este primer capítulo, exploramos el universo de herramientas, frameworks y recursos que
+                            transforman la creación de interfaces en una experiencia fluida y efectiva. Desde los
+                            frameworks
+                            más potentes hasta los recursos indispensables, desglosamos todo lo necesario para diseñar
+                            interfaces modernas, rápidas y atractivas. Si buscas potenciar la experiencia de usuario en
+                            tus
+                            proyectos, ¡este episodio es para ti! <br>
+                            Hablaremos de:
+                        </p>
+                        <ul>
+                            <li>Frameworks front-end: React, Angular, Vue.js, Svelte.</li>
+                            <li>Bibliotecas de diseño: Tailwind CSS, Material UI, Bootstrap.</li>
+                            <li>Herramientas de prototipado: Figma, Adobe XD, Sketch.</li>
+                            <li>Gestión de estados: Redux, Zustand, MobX.</li>
+                            <li>Optimización de rendimiento: Vite, Webpack, esbuild.</li>
+                            <li>Control de versiones y colaboración: GitHub, GitLab, CodeSandbox.</li>
+                            <li>Otros recursos clave: Google Fonts, Font Awesome, Unsplash, y más.</li>
+                        </ul>
+                    </div>
                 </div>
-                
-            </article>
 
-            <div id="notesContainer">
-                <button class="pushable notes" id="toggleButton">
-                    <span class="shadow"></span>
-                        <span class="edge"></span>
-                        <span class="front">
-                            <a href="javascript:void(0)" id="scroll-episodios">Ver notas</a>
-                        </span>
-                </button>
-                <div id="notes" class="notesHidden">
-                    <p>
-                        En este primer capítulo, exploramos el universo de herramientas, frameworks y recursos que transforman la creación de interfaces en una experiencia fluida y efectiva. Desde los frameworks más potentes hasta los recursos indispensables, desglosamos todo lo necesario para diseñar interfaces modernas, rápidas y atractivas. Si buscas potenciar la experiencia de usuario en tus proyectos, ¡este episodio es para ti!
-    
-                        Hablaremos de:
-                    </p>
-                    <ul>
-                        <li>Frameworks front-end: React, Angular, Vue.js, Svelte.</li>
-                        <li>Bibliotecas de diseño: Tailwind CSS, Material UI, Bootstrap.</li>
-                        <li>Herramientas de prototipado: Figma, Adobe XD, Sketch.</li>
-                        <li>Gestión de estados: Redux, Zustand, MobX.</li>
-                        <li>Optimización de rendimiento: Vite, Webpack, esbuild.</li>
-                        <li>Control de versiones y colaboración: GitHub, GitLab, CodeSandbox.</li>
-                        <li>Otros recursos clave: Google Fonts, Font Awesome, Unsplash, y más.</li>
-                    </ul>
-                </div>
-              </div>
+            </article>
 
             <hr>
 
@@ -192,7 +188,7 @@
 
             <form method="post">
                 <div class="form-group">
-                    <label for="email">Correo electrónico:</label>  
+                    <label for="email">Correo electrónico:</label>
                     <input type="email" id="email" name="email" required placeholder="Your email">
                 </div>
                 <div class="form-group">

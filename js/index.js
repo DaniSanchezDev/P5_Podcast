@@ -25,17 +25,18 @@
 
 const toggleButton = document.getElementById('toggleButton');
 const notes = document.getElementById('notes');
+const toggleButtonText = document.querySelector('#toggleButton .front a');
 
 toggleButton.addEventListener('click', () => {
-  // Alterna entre mostrar y ocultar el div con las notas
-  if (notes.style.display === 'none') {
-    notes.style.display = 'block'; // Muestra las notas y ocupa espacio
-    toggleButton.textContent = 'Ocultar Notas'; // Cambia el texto del botón
-  } else {
-    notes.style.display = 'none'; // Oculta las notas y no ocupa espacio
-    toggleButton.textContent = 'Ver Notas'; // Cambia el texto del botón
-  }
+    if (notes.style.display === 'none' || notes.style.display === '') {
+        notes.style.display = 'block'; 
+        toggleButtonText.textContent = 'Ocultar Notas'; 
+    } else {
+        notes.style.display = 'none'; 
+        toggleButtonText.textContent = 'Ver Notas'; 
+    }
 });
+
 
 
 // function showHide(){
