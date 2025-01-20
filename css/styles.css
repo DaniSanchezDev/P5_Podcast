@@ -53,7 +53,7 @@ nav {
     backdrop-filter: blur(20px);
 }
 
-nav ul{
+nav ul {
     list-style-type: none;
 }
 
@@ -198,6 +198,7 @@ nav ul li {
     padding: 0px;
     border: none;
     cursor: pointer;
+    width: fit-content;
     outline-offset: 4px;
     transition: filter 250ms;
 }
@@ -304,7 +305,7 @@ hr {
     align-items: center;
 }
 
-.podcast-descrp{
+.podcast-descrp {
     margin: 0 50px 50px 0;
 }
 
@@ -314,7 +315,7 @@ hr {
     font-weight: 300;
 }
 
-    
+
 .notesHidden {
     display: none;
     margin: 25px 0;
@@ -324,7 +325,7 @@ hr {
     margin-right: 50px;
 }
 
-.notesHidden ul{
+.notesHidden ul {
     list-style-type: disc;
     margin: 15px 0 0 50px;
 }
@@ -357,7 +358,17 @@ hr {
     color: #395359;
 }
 
-
+#contacto .pushable {
+    margin: 0 auto;
+    position: relative;
+    background: transparent;
+    padding: 0px;
+    border: none;
+    cursor: pointer;
+    width: fit-content;
+    outline-offset: 4px;
+    transition: filter 250ms;
+}
 
 #contacto {
     background-color: #F2F2F2;
@@ -402,7 +413,7 @@ hr {
     font-family: 'roboto';
     font-size: 0.9em;
     height: 300px;
-    resize: none    ;
+    resize: none;
     border-radius: 3px;
     padding: 10px;
     border: none;
