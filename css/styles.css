@@ -349,7 +349,7 @@ hr {
 }
 
 
-#form h2 {
+#contacto h2 {
     text-align: left;
     font-weight: 300;
     font-size: 3em;
@@ -359,7 +359,7 @@ hr {
 
 
 
-#form {
+#contacto {
     background-color: #F2F2F2;
     padding: 100px;
     display: flex;
@@ -368,7 +368,7 @@ hr {
     align-items: center;
 }
 
-#form form {
+#contacto form {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -380,12 +380,12 @@ hr {
     padding: 50px;
 }
 
-#form label {
+#contacto label {
     font-size: 1.3em;
     font-weight: 300;
 }
 
-#form input {
+#contacto input {
     width: 100%;
     font-size: 0.9em;
     height: 40px;
@@ -397,7 +397,7 @@ hr {
     background-color: #f3f3f3;
 }
 
-#form textarea {
+#contacto textarea {
     width: 100%;
     font-family: 'roboto';
     font-size: 0.9em;
